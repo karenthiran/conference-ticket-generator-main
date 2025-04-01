@@ -6,10 +6,26 @@
 }
 
 body{
-    background-image: url("assets/images/background-desktop.png");
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: 
+        url("assets/images/pattern-squiggly-line-top.svg"),
+        url("assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+        url("assets/images/pattern-lines.svg"),
+        url("assets/images/background-desktop.png");
+    background-position: 
+        right top,
+        left bottom,
+        center center,
+        center center;
+    background-size: 
+        auto,
+        auto,
+        auto,
+        cover;
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -76,6 +92,11 @@ p{
     margin: 0;
 }
 
+.upload-box:hover{
+    border-color: #fff;
+    box-shadow: 0 0 0 #ffffff;
+}
+
 .upload-info{
     font-size: 0.9rem;
     color: #999;
@@ -95,8 +116,8 @@ input[type="email"]{
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-    outline: none;
-    border-color: #ff5e62;
+    border-color: #ffffff;
+    box-shadow: 0 0 0px #fcfcfc;
 }
 
 .generateticket{
